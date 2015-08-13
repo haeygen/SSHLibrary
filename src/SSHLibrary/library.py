@@ -1216,6 +1216,9 @@ class SSHLibrary(object):
         self._log(output, loglevel)
         return output
 
+    def get_file_from_device(self, source, destination='.'):
+        print "I get it!"
+
     def get_file(self, source, destination='.'):
         """Downloads file(s) from the remote machine to the local machine.
 
