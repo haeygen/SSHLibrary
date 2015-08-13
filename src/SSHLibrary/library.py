@@ -20,7 +20,6 @@ from robot.utils import ConnectionCache
 
 from .abstractclient import SSHClientException
 from .client import SSHClient
-from scp import SCPClient
 from .config import (Configuration, IntegerEntry, LogLevelEntry, NewlineEntry,
                      StringEntry, TimeEntry)
 from .version import VERSION
@@ -1217,6 +1216,7 @@ class SSHLibrary(object):
         return output
 
     def get_file_from_device(self, source, destination='.'):
+        print self.current
         print "I get it!"
 
     def get_file(self, source, destination='.'):
