@@ -20,6 +20,7 @@ from robot.utils import ConnectionCache
 
 from .abstractclient import SSHClientException
 from .client import SSHClient
+from .client import SCPClient
 from .config import (Configuration, IntegerEntry, LogLevelEntry, NewlineEntry,
                      StringEntry, TimeEntry)
 from .version import VERSION
