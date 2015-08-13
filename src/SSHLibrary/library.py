@@ -1216,7 +1216,7 @@ class SSHLibrary(object):
         return output
 
     def get_file_from_device(self, source, destination='.'):
-        print self.current
+        print self.current.get_transport()
         print "I get it!"
 
     def get_file(self, source, destination='.'):
